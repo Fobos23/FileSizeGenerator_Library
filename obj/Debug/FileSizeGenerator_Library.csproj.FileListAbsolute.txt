@@ -1,0 +1,6 @@
+C:\Users\lapshin\Desktop\FileSizeGenerator_Library\obj\Debug\FileSizeGenerator_Library.csproj.CoreCompileInputs.cache
+C:\Users\lapshin\Desktop\FileSizeGenerator_Library\bin\Debug\FileSizeGenerator_Library.dll
+C:\Users\lapshin\Desktop\FileSizeGenerator_Library\bin\Debug\FileSizeGenerator_Library.pdb
+C:\Users\lapshin\Desktop\FileSizeGenerator_Library\obj\Debug\FileSizeGenerator_Library.dll
+C:\Users\lapshin\Desktop\FileSizeGenerator_Library\obj\Debug\FileSizeGenerator_Library.pdb
+C:\Users\lapshin\Desktop\FileSizeGenerator_Library\obj\Debug\FileSizeGenerator_Library.csprojAssemblyReference.cache
