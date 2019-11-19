@@ -17,7 +17,7 @@ namespace FileSizeGenerator_Library.Helpers
 
 		internal void GetFileAfterClone()
 		{
-			var nameOfNewFile = $"FileAfterCloning {Config.nameMode}.xml";
+			var nameOfNewFile = Config.newFileName;
 			var header = Read(Config.headerFile);
 			var body = Read(Config.bodyFile);
 			var footer = Read(Config.footerFile);

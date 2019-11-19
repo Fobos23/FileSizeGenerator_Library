@@ -1,4 +1,5 @@
-﻿using FileSizeGenerator_Library.Helpers;
+﻿using FileSizeGenerator_Library.Configs;
+using FileSizeGenerator_Library.Helpers;
 using FileSizeGenerator_Library.Writer;
 
 namespace FileSizeGenerator_Library.FufFactory
@@ -13,6 +14,8 @@ namespace FileSizeGenerator_Library.FufFactory
 
 		internal override void CreateBigFuf()
 		{
+			Config.SetConfig(_params.pathToFile);
+
 			var xmlParser = new XmlParser(new WriterWithoutLines());
 			xmlParser.GetFilesWithPartsOfXml(_params.element, _params.pathToFile, _params.docType);
 

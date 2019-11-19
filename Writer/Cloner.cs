@@ -12,9 +12,9 @@ namespace FileSizeGenerator_Library.Writer
 			this.iterations = iterations;
 		}
 
-		internal override void Write(string fileName, string file)
+		internal override void Write(string pathOrFileName, string file)
 		{
-			using (var sw = new StreamWriter(Path.GetFullPath(fileName), true, Encoding.Default))
+			using (var sw = new StreamWriter(Path.GetFullPath(pathOrFileName), true, Encoding.Default))
 			{
 				for (var i = iterations; i > 0; i--)
 					sw.WriteLine(file);

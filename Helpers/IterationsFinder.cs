@@ -12,9 +12,7 @@ namespace FileSizeGenerator_Library.Helpers
 			var bodysSize = GetFileLength(Config.bodyFile);
 			var footerSize = GetFileLength(Config.footerFile);
 
-			var modePow = units == Units.KB ? 1 : units == Units.MB ? 2 : 3;
-
-			var neededSizeInBytes = (long)(number * Math.Pow(2, 10 * modePow));
+			var neededSizeInBytes = (long)(number * Math.Pow(2, 10 * (int)units));
 			var iterations = ((neededSizeInBytes - headersSize - footerSize) / bodysSize);
 
 			return iterations;

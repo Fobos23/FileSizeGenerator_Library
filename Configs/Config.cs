@@ -1,12 +1,25 @@
 ﻿using System;
+using System.IO;
 
 namespace FileSizeGenerator_Library.Configs
 {
 	internal class Config
 	{
-		public static readonly string nameMode = $"{DateTime.Now:yyyyMMddhhmmss}";
-		public static readonly string headerFile = $"header {nameMode}.xml";
-		public static readonly string bodyFile = $"body {nameMode}.xml";
-		public static readonly string footerFile = $"footer {nameMode}.xml";
+		public static string fileDirectory;
+		public static string nameMode;
+		public static string headerFile;
+		public static string bodyFile;
+		public static string footerFile;
+		public static string newFileName;
+
+		internal static void SetConfig(string pathToXml)
+		{
+			fileDirectory = $"{Path.GetDirectoryName(Path.GetFullPath(pathToXml))}\\";
+			nameMode = $"{DateTime.Now:yyyyMMddhhmmss}";
+			headerFile = $"{fileDirectory}header {nameMode}.xml";
+			bodyFile = $"{fileDirectory}body {nameMode}.xml";
+			footerFile = $"{fileDirectory}footer {nameMode}.xml";
+			newFileName = $"{fileDirectory}FileAfterCloning {nameMode}.xml";
+		}
 	}
 }

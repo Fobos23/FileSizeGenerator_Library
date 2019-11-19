@@ -23,6 +23,8 @@ namespace FileSizeGenerator_Library.FufFactory
 
 		internal override void CreateBigFuf()
 		{
+			Config.SetConfig(pathToFile);
+
 			var xmlParser = new XmlParser(new WriterWithoutLines());
 			xmlParser.GetFilesWithPartsOfXml(element, pathToFile, docType);
 

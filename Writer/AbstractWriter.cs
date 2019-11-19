@@ -2,6 +2,6 @@
 {
 	internal abstract class AbstractWriter
 	{
-		internal abstract void Write(string fileName, string file);
+		internal abstract void Write(string pathOrFileName, string file);
 	}
 }

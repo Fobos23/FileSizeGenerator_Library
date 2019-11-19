@@ -2,8 +2,8 @@
 {
 	public enum Units
 	{
-		KB,
-		MB,
-		GB
+		KB = 1,
+		MB = 2,
+		GB = 3
 	}
 }
