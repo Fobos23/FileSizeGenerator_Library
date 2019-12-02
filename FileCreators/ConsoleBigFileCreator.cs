@@ -2,17 +2,17 @@
 using FileSizeGenerator_Library.Helpers;
 using FileSizeGenerator_Library.Writer;
 
-namespace FileSizeGenerator_Library.FufFactory
+namespace FileSizeGenerator_Library.FileCreators
 {
-	internal class ConsoleBigFufCreator : AbstractFufFactory
+	internal class ConsoleBigFileCreator : AbstractBigFileCreator
 	{
 		private ParsedInputParams _params;
-		internal ConsoleBigFufCreator(string inputParams)
+		internal ConsoleBigFileCreator(string inputParams)
 		{
 			_params = new ParsedInputParams(inputParams);
 		}
 
-		internal override void CreateBigFuf()
+		internal override void CreateBigFile()
 		{
 			Config.SetConfig(_params.pathToFile);
 

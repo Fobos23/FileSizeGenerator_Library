@@ -45,9 +45,9 @@
     <Compile Include="Configs\Config.cs" />
     <Compile Include="Configs\Units.cs" />
     <Compile Include="ConsoleClient.cs" />
-    <Compile Include="FufFactory\AbstractFufFactory.cs" />
-    <Compile Include="FufFactory\ApiBigFufCreator.cs" />
-    <Compile Include="FufFactory\ConsoleBigFufCreator.cs" />
+    <Compile Include="FileCreators\AbstractBigFileCreator.cs" />
+    <Compile Include="FileCreators\ApiBigFileCreator.cs" />
+    <Compile Include="FileCreators\ConsoleBigFileCreator.cs" />
     <Compile Include="Helpers\Cleaner.cs" />
     <Compile Include="Helpers\FilePreparator.cs" />
     <Compile Include="Helpers\IterationsFinder.cs" />

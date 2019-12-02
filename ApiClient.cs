@@ -1,5 +1,5 @@
 ﻿using FileSizeGenerator_Library.Configs;
-using FileSizeGenerator_Library.FufFactory;
+using FileSizeGenerator_Library.FileCreators;
 
 namespace FileSizeGenerator_Library
 {
@@ -13,9 +13,9 @@ namespace FileSizeGenerator_Library
 		/// <param name="number"> Требуемый размер (число). </param>
 		/// <param name="units"> Требуемая размерность (KB, MB, GB). </param>
 		/// <param name="docType"> Тип документа из xml. Обычно это вторая строка в xml (например: Файл)</param>
-		public void GetBigFuf(string pathToFile, string element, int number, Units units, string docType)
+		public void GetBigFile(string pathToFile, string element, int number, Units units, string docType)
 		{
-			new ApiBigFufCreator(pathToFile, element, number, units, docType).CreateBigFuf();
+			new ApiBigFileCreator(pathToFile, element, number, units, docType).CreateBigFile();
 		}
 	}
 }

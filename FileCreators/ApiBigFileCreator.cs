@@ -2,9 +2,9 @@
 using FileSizeGenerator_Library.Helpers;
 using FileSizeGenerator_Library.Writer;
 
-namespace FileSizeGenerator_Library.FufFactory
+namespace FileSizeGenerator_Library.FileCreators
 {
-	internal class ApiBigFufCreator : AbstractFufFactory
+	internal class ApiBigFileCreator : AbstractBigFileCreator
 	{
 		private string pathToFile;
 		private string element;
@@ -12,7 +12,7 @@ namespace FileSizeGenerator_Library.FufFactory
 		private Units units;
 		private string docType;
 
-		internal ApiBigFufCreator(string pathToFile, string element, int number, Units units, string docType)
+		internal ApiBigFileCreator(string pathToFile, string element, int number, Units units, string docType)
 		{
 			this.pathToFile = pathToFile;
 			this.element = element;
@@ -21,7 +21,7 @@ namespace FileSizeGenerator_Library.FufFactory
 			this.docType = docType;
 		}
 
-		internal override void CreateBigFuf()
+		internal override void CreateBigFile()
 		{
 			Config.SetConfig(pathToFile);
 
