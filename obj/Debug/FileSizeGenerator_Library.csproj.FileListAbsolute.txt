@@ -7,3 +7,4 @@ C:\Users\lapshin\Desktop\СамописнаяБиблиотека\FileSizeGenera
 C:\Users\lapshin\Desktop\СамописнаяБиблиотека\FileSizeGenerator_Library\bin\Debug\FileSizeGenerator_Library.pdb
 C:\Users\lapshin\Desktop\СамописнаяБиблиотека\FileSizeGenerator_Library\obj\Debug\FileSizeGenerator_Library.dll
 C:\Users\lapshin\Desktop\СамописнаяБиблиотека\FileSizeGenerator_Library\obj\Debug\FileSizeGenerator_Library.pdb
+C:\Users\lapshin\Desktop\СамописнаяБиблиотека\FileSizeGenerator_Library\obj\Debug\FileSizeGenerator_Library.csprojAssemblyReference.cache
